@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="js/main.js"></script>
+    <script src="data.json"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skyline World Clocks</title>
+</head>
+
+<body>
+    <div class="intro-block intro-block-1"></div>
+    <div class="intro-block intro-block-2"></div>
+    <div class="intro-block intro-block-3"></div>
+    <div class="intro-block intro-block-4"></div>
+    <div class="container">
+        <!------------------------------ WORDS ------------------------------>
+        <div style="position: relative;margin: auto;" class="container-block">
+            <span id="hello" class="large-font hidden">Hello,</span>
+            <span id="welcome" class="x-small-font hidden">and welcome <br> to</span>
+            <div class="city-wrap hidden">
+                <div class="city-block-1">
+                    <span id="city" class="large-font"></span>
+                </div>
+                <div class="city-block-2">
+                    <span id="timezone" class="x-small-font"></span>
+                </div>
+            </div>
+            <span id="it-is" class="x-small-font hidden">it is</span>
+            <span id="now" class="medium-font hidden">now</span>
+            <span id="minutes" class="x-large-font hidden"></span>
+            <span id="minutes-word" class="medium-font hidden"></span>
+            <span id="past-to" class="large-font hidden"></span>
+            <div class="seconds-wrap hidden">
+                <div class="seconds-block-1">
+                    <span id="hours" class="x-large-font "></span>
+                </div>
+                <div class="seconds-block-2">
+                    <span id="and" class="x-small-font ">and <br></span>
+                    <span id="seconds" class="medium-font "><br></span>
+                    <span id="seconds-word" class="small-font "></span>
+                </div>
+            </div>
+            <span id="in-the" class="x-small-font hidden"></span>
+            <span id="part-of-day" class="small-font hidden"></span>
+            <span id="on" class="small-font hidden">on</span>
+            <span id="day-of-week" class="medium-font hidden"></span>
+            <span id="the" class="medium-font hidden">the</span>
+            <span id="date" class="x-large-font hidden"></span>
+            <span id="of" class="medium-font hidden">of</span>
+            <span id="month" class="x-large-font hidden"></span>
+            <span id="week-word" class="small-font hidden">week</span>
+            <span id="week" class="medium-font hidden"></span>
+            <span id="day-word" class="x-small-font animated  hidden">day</span>
+            <span id="year-day" class="medium-font hidden"></span>
+            <span id="year-word" class="x-small-font hidden">of the year</span>
+            <span id="year" class="medium-font hidden"></span>
+            <!------------------------------ WORDS-END ------------------------------>
+            <!------------------------------ CLOCKS ------------------------------>
+            <div class="clock-container clock-container-1 hidden ">
+                <div class="clock clock-1 ">
+                    <div class="center-point"></div>
+                    <div class="second-arrow"></div>
+                    <div class="minute-arrow"></div>
+                    <div class="hour-arrow"></div>
+                </div>
+                <p class="name"></p>
+                <p class="timezone"></p>
+            </div>
+            <div class="clock-container clock-container-2 hidden">
+                <div class="clock clock-2">
+                    <div class="center-point"></div>
+                    <div class="second-arrow"></div>
+                    <div class="minute-arrow"></div>
+                    <div class="hour-arrow"></div>
+                </div>
+                <p class="name"></p>
+                <p class="timezone"></p>
+            </div>
+            <div class="clock-container clock-container-3 hidden">
+                <div class="clock clock-3">
+                    <div class="center-point"></div>
+                    <div class="second-arrow"></div>
+                    <div class="minute-arrow"></div>
+                    <div class="hour-arrow"></div>
+                </div>
+                <p class="name"></p>
+                <p class="timezone"></p>
+            </div>
+            <div class="clock-container clock-container-4 hidden">
+                <div class="clock clock-4">
+                    <div class="center-point"></div>
+                    <div class="second-arrow"></div>
+                    <div class="minute-arrow"></div>
+                    <div class="hour-arrow"></div>
+                </div>
+                <p class="name"></p>
+                <p class="timezone"></p>
+            </div>
+        </div>
+        <!------------------------------ CLOCKS-END ------------------------------>
+        <!------------------------------ SKYLINE ------------------------------>
+        <div class="slider-container">
+            <div class="slider transition-img">
+                <div class="slider-img-block">
+                    <img id="slideImg" class="slide"></img>
+                </div>
+                <div class="slider-img-block">
+                    <img class="slide" src="img/skyline.svg"></img>
+                </div>
+                <div class="slider-img-block">
+                    <img class="slide" src="img/skyline.svg"></img>
+                </div>
+            </div>
+        </div>
+        <!------------------------------ SKYLINE-END ------------------------------>
+    </div>
+</body>
+
+</html>

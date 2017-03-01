@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body,html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+}
+
+.container{
+    height: 100%;
+    background: rgba(11,94,215,1);
+    overflow: hidden;
+}
+
+.x-large-font{
+    font-size: 0.08em;
+}
+.large-font{
+    font-size: 0.06em;
+}
+.medium-font{
+    font-size: 0.04em;
+}
+.small-font{
+    font-size: 0.03em;
+}
+.x-small-font{
+    font-size: 0.02em;
+}
+
+span{
+    font-family: 'Lato';
+    color: white;
+    z-index: 5;
+}
+
+.city-wrap{
+    position: absolute;
+    top: 0.05em;
+    left: 0.54em;
+}
+
+.city-block-1{
+    float: left;
+    height: 0.07em;
+}
+
+.city-block-2{
+    overflow: hidden;
+    height: 0.07em;
+}
+
+.seconds-wrap{
+    position: absolute;
+    top: 0.16em;
+    left: .51em;
+}
+
+.seconds-block-1{
+    float: left;
+    height: 0.08em;
+}
+
+.seconds-block-2{
+    float: left;
+    padding-top: 0.02em;
+    padding-left: 0.02em;
+    overflow: hidden;
+    -moz-overflow: hidden;
+    height: 0.08em;
+}
+
+#hello{
+    position: absolute;
+    top: 0.2em;
+    left: 5.2em;
+}
+#welcome{
+    position: absolute;
+    top: 1.8em;
+    left: 25em;
+}
+#city{
+    float: left;
+}
+
+#timezone{
+    line-height: 2em;
+    float: left;
+    padding-top: 1.6em;
+    padding-left: 0.4em;
+}
+
+#it-is{
+    position: absolute;
+    top: 4.4em;
+    left: 9.5em;
+}
+#now{
+    position: absolute;
+    top: 1.7em;
+    left: 5.7em;
+}
+#minutes{
+    position: absolute;
+    top: 1.2em;
+    left: 2em;
+    width: 5em;
+    text-align: center;
+}
+#minutes-word{
+    position: absolute;
+    top: 4.5em;
+    left: 6em;
+}
+#past-to{
+    position: absolute;
+    top: 2.8em;
+    left: 6.3em;
+    text-align: center;
+    width: 2.5em;
+}
+
+#hours{
+    float: left;
+}
+#and, #seconds, #seconds-word{
+    display: block;
+    line-height: .8em;
+}
+
+#seconds-word{
+    padding-left: 0.6em;
+}
+
+#in-the{
+    position: absolute;
+    top: 12.5em;
+    left: 25em;
+    text-align: right;
+    width: 3em;
+}
+#part-of-day{
+    position: absolute;
+    top: 8em;
+    left: 19em;
+}
+#on{
+    position: absolute;
+    top: 7.8em;
+    left: 4em;
+}
+#day-of-week{
+    position: absolute;
+    top: 5.6em;
+    left: 4em;
+}
+#the{
+    position: absolute;
+    top: 6.8em;
+    left: 4.5em;
+}
+#date{
+    position: absolute;
+    top: 3.2em;
+    left: 3.1em;
+}
+#of{
+    position: absolute;
+    top: 8.8em;
+    left: 12.5em;
+}
+#month{
+    position: absolute;
+    top: 4.1em;
+    left: 6.8em;
+}
+#week-word{
+    position: absolute;
+    top: 9.2em;
+    left: 27em;
+}
+#week{
+    position: absolute;
+    top: 7.6em;
+    left: 20.5em;
+}
+#day-word{
+    position: absolute;
+    top: 21.5em;
+    left: 30.5em;
+}
+#year-day{
+    position: absolute;
+    top: 10.2em;
+    left: 16.3em;
+}
+#year-word{
+    position: absolute;
+    top: 21.5em;
+    left: 36.7em;
+}
+#year{
+    position: absolute;
+    top: 10.2em;
+    left: 21em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clock-container{
+    position: absolute;
+    top: 0.34em;
+    z-index: 2;
+}
+.clock-container-1{
+    left: 0.03em;
+}
+.clock-container-2{
+    left: 0.14em;
+}
+.clock-container-3{
+    left: 0.25em;
+}
+.clock-container-4{
+    left: 0.36em;
+}
+
+body{
+  font-size: 1440px;
+  background-color: rgba(11,94,215,1);
+}
+.clock{
+    background-color: transparent;
+    border: 8px solid white;
+    border-radius: 50% 50%;
+    width: 0.08em;
+    height: 0.08em;
+    position: relative;
+    margin: 0.01em;
+}
+
+
+.center-point{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+}
+
+.second-arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 4px;
+    height: 0.034em;
+    background-color: black;
+    border-radius: 10px;
+    transform: translate(-50%, 0px);
+    transform-origin: 50% 100%;
+    z-index: 8;
+}
+
+.minute-arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 6px;
+    height: 0.033em;
+    background-color: white;
+    border-radius: 10px;
+    transform: translate(-50%, 0px);
+    transform-origin: 50% 100%;
+    z-index: 6;
+}
+
+.hour-arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 8px;
+    height: 0.031em;
+    background-color: white;
+    border-radius: 10px;
+    transform: translate(-50%, 0px);
+    transform-origin: 50% 100%;
+    z-index: 5;
+}
+
+.name{
+    font-size: 0.014em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lato';
+    color: white;
+}
+
+.timezone{
+    font-size: 0.014em;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lato';
+    color: white;
+}
+
+.slider-container{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slider{
+    display: table;
+    height: 100%;
+}
+
+.transition-img {
+    -moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    transition: all 0.3s ease-out; 
+}
+
+.slider-img-block {
+    display: table-cell;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.slide{
+    display: inline-block;
+    float: left;
+}
+
+.hidden{
+    display: none;
+}
+
+.intro-block{
+  height: 50%;
+  width: 50%;
+  background-color: black;
+  position: absolute;
+  animation-name: intro;
+  animation-duration: .8s;
+  animation-delay: .3s;
+  z-index: 10;
+}
+
+.intro-block-1{
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+}
+.intro-block-2{
+  top: 0;
+  left: 50%;
+  transform-origin: 100% 0;
+}
+.intro-block-3{
+  top: 50%;
+  left: 0;
+  transform-origin: 0 100%;
+}
+.intro-block-4{
+  top: 50%;
+  left: 50%;
+  transform-origin: 100% 100%;
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+/*@font-face {
+    font-family: 'CentraleSans';
+    src: url('../fonts/centralesans-light-webfont.eot');
+    src: url('../fonts/centralesans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/centralesans-light-webfont.woff2') format('woff2'),
+         url('../fonts/centralesans-light-webfont.woff') format('woff'),
+         url('../fonts/centralesans-light-webfont.ttf') format('truetype'),
+         url('../fonts/centralesans-light-webfont.svg#centrale_sans_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/

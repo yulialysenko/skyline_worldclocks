@@ -1,0 +1,17 @@
+data = {
+    "city" : "Sydney",
+    "timezone" : "GMT+10",
+    "clocksInfo": [{
+        "name": "Andover",
+        "timezone": "GMT+10"
+    }, {
+        "name": "Sao Paulo",
+        "timezone": "GMT+8"
+    }, {
+        "name": "Eindhoven",
+        "timezone": "GMT+0"
+    }, {
+        "name": "Singapore",
+        "timezone": "GMT-3"
+    }]
+}
